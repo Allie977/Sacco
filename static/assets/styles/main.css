@@ -18,8 +18,12 @@ nav{
     display: flex;
 }
 body{
-    background-color: saddlebrown;
+    background: linear-gradient(to right, #565e64, #6f42c1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 .member_table{
     width: 100%;
     padding: 10px;
@@ -31,3 +35,114 @@ body{
     margin-bottom: 10px;
 
 }
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.carousel-item img{
+    height: 500px;
+    object-fit: cover;
+}
+nav {
+    background-color: cadetblue;
+}
+.col-md-6{
+    background-color: black;
+}
+/* Scope EVERYTHING inside this wrapper */
+.member-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(-45deg, #667eea, #764ba2, #6b73ff, #000dff);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+/* Background Animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Form Card */
+.member-form-section .form-container {
+  background: #ffffff;
+  padding: 40px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: floatCard 4s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes floatCard {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.member-form-section h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.member-form-section .form-group {
+  margin-bottom: 20px;
+}
+
+.member-form-section label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #555;
+}
+
+.member-form-section input,
+.member-form-section textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.member-form-section input:focus,
+.member-form-section textarea:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.6);
+  transform: scale(1.02);
+}
+
+.member-form-section textarea {
+  resize: none;
+}
+
+.member-form-section button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.member-form-section button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.member-form-section button:active {
+  transform: scale(0.98);
+}
+

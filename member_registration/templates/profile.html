@@ -1,37 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Profile</title>
-  <link rel="stylesheet" href="../../static/assets/styles/main.css">
-  <link rel="stylesheet" href="../../static/assets/styles/bootstrap/css/bootstrap.css">
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
 <h1>PROFILE</h1>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
 <div class="container">
 <div class="row">
   <div class="col-md-6">
@@ -66,13 +36,5 @@
   </div>
 <script src="../../static/assets/styles/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<footer>
-  <hr>
-  <p>&copy; 2026 My Website. All rights reserved.</p>
-  <a href="about.html">ABOUT</a> |
-  <a href="member_list.html">MEMBERS</a> |
-  <a href="profile.html">PROFILE</a> |
-  <a href="member_details.html">MEMBER DETAILS</a>
-</footer>
-</body>
-</html>
+
+{% endblock %}
